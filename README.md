@@ -1,6 +1,6 @@
 Flutter News App
 
-Overview
+#Overview
 
 This Flutter application is designed to fetch, search, and filter news articles. The app follows the Clean Architecture pattern and is built with the following features:
 
@@ -14,9 +14,9 @@ Support both portrait and landscape modes.
 Include unit tests for all use cases.
 Features
 
-Home Page:
+#Home Page:
 
-Search field.
+#Search field.
 Dropdown list for filtering by section.
 Toggle switch to switch between list view and card view.
 Display articles in the chosen view format.
@@ -29,10 +29,11 @@ Architecture
 
 The application is built using Clean Architecture and includes the following layers:
 
-Presentation Layer: Handles the UI and user interactions.
-Domain Layer: Contains the business logic, including use cases and repository interfaces.
-Data Layer: Manages data sources, network calls, and data models.
-Libraries Used
+#Presentation Layer: Handles the UI and user interactions.
+#Domain Layer: Contains the business logic, including use cases and repository interfaces.
+#Data Layer: Manages data sources, network calls, and data models.
+
+#Libraries Used
 
 Retrofit: For making HTTP calls.
 Riverpod: For state management.
@@ -47,36 +48,8 @@ IDE (VSCode/Android Studio)
 Installation
 Clone the Repository:
 
-sh
-Copy code
-git clone git@github.com:Salahaddin-Mo7h/NY-Times-App.git
-cd flutter_news_app
-Install Dependencies:
+#Project Structure
 
-sh
-Copy code
-flutter pub get
-Generate Mocks:
-
-sh
-Copy code
-flutter pub run build_runner build
-Running the App
-To run the app on a connected device or emulator, use the following command:
-
-sh
-Copy code
-flutter run
-Running Tests
-To run all unit tests, use the following command:
-
-sh
-Copy code
-flutter test
-Project Structure
-
-plaintext
-Copy code
 lib/
 |- data/
 |  |- models/
