@@ -45,7 +45,38 @@ The application is built using Clean Architecture and includes the following lay
 
 #Project Structure
 
-<img width="716" alt="Screenshot 2024-06-01 at 9 10 45 AM" src="https://github.com/Salahaddin-Mo7h/NY-Times-App/assets/103589726/6b493dc2-1b09-4ca7-81a0-431b04c3ca96">
+#css
+lib/
+|- data/
+|  |- models/
+|  |  |- arts.dart
+|  |- repositories/
+|  |  |- article_repository_impl.dart
+|  |- api/
+|  |  |- api_client.dart
+|- domain/
+|  |- entities/
+|  |  |- article.dart
+|  |- repositories/
+|  |  |- article_repository.dart
+|  |- usecases/
+|  |  |- get_top_stories.dart
+|- presentation/
+|  |- pages/
+|  |  |- home_page.dart
+|  |  |- article_detail_page.dart
+|  |  |- webview_page.dart
+|  |- widgets/
+|  |  |- article_list.dart
+|  |- providers/
+|  |  |- article_provider.dart
+|- core/
+|  |- error/
+|  |  |- failure.dart
+|  |- network/
+|  |  |- network_info.dart
+|- locator.dart
+|- main.dart
 
 Detailed Descriptions
 
