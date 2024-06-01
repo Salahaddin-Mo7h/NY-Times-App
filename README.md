@@ -1,6 +1,6 @@
 Flutter News App
 
-#Overview
+# Overview
 
 This Flutter application is designed to fetch, search, and filter news articles. The app follows the Clean Architecture pattern and is built with the following features:
 
@@ -14,39 +14,34 @@ Support both portrait and landscape modes.
 Include unit tests for all use cases.
 Features
 
-#Home Page:
+# Home Page:
 
-#Search field.
-Dropdown list for filtering by section.
-Toggle switch to switch between list view and card view.
-Display articles in the chosen view format.
-Details Page:
+# Search field.
 
-Display a large image.
-Show article title, description, and author.
-"See more" button to open and preview the article in a WebView.
+1) Dropdown list for filtering by section.
+2) Icons to switch between list view and card view.
+3) Display articles in the chosen view format.
+   
+# Details Page:
+
+1) Display a large image.
+2) Show article title, description, and author.
+3) "See more" button to open and preview the article in a WebView.
 Architecture
 
 The application is built using Clean Architecture and includes the following layers:
 
-#Presentation Layer: Handles the UI and user interactions.
-#Domain Layer: Contains the business logic, including use cases and repository interfaces.
-#Data Layer: Manages data sources, network calls, and data models.
+# Presentation Layer: Handles the UI and user interactions.
+# Domain Layer: Contains the business logic, including use cases and repository interfaces.
+# Data Layer: Manages data sources, network calls, and data models.
 
 #Libraries Used
 
-Retrofit: For making HTTP calls.
-Riverpod: For state management.
-Get_it: For dependency injection.
-Mockito: For creating mock objects in tests.
-Setup Instructions
+1) Retrofit: For making HTTP calls.
+2) Riverpod: For state management.
+3) Get_it: For dependency injection.
+4) Mockito: For creating mock objects in tests.
 
-Prerequisites
-Flutter SDK: Installation Guide
-Dart SDK: Included with Flutter installation
-IDE (VSCode/Android Studio)
-Installation
-Clone the Repository:
 
 #Project Structure
 
@@ -146,13 +141,11 @@ class FilterArticlesUseCase {
   }
 }
 
-Unit Tests
+# Unit Tests
 
 Unit Test for Use Cases
 usecase_tests.dart
 
-dart
-Copy code
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:your_project/domain/entities/arts.dart';
