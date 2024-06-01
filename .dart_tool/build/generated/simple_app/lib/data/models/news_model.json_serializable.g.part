@@ -1,0 +1,19 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+NewsModel _$NewsModelFromJson(Map<String, dynamic> json) => NewsModel(
+      json['title'] as String,
+      json['byline'] as String,
+      json['section'] as String,
+      json['url'] as String,
+      json['multimedia'] as String,
+    );
+
+Map<String, dynamic> _$NewsModelToJson(NewsModel instance) => <String, dynamic>{
+      'title': instance.title,
+      'byline': instance.byline,
+      'section': instance.section,
+      'url': instance.url,
+      'multimedia': instance.multimedia,
+    };
