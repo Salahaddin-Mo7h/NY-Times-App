@@ -45,37 +45,7 @@ The application is built using Clean Architecture and includes the following lay
 
 #Project Structure
 
-lib/
-|- data/
-|  |- models/
-|  |  |- arts.dart
-|  |- repositories/
-|  |  |- article_repository_impl.dart
-|  |- api/
-|  |  |- api_client.dart
-|- domain/
-|  |- entities/
-|  |  |- article.dart
-|  |- repositories/
-|  |  |- article_repository.dart
-|  |- usecases/
-|  |  |- get_top_stories.dart
-|- presentation/
-|  |- pages/
-|  |  |- home_page.dart
-|  |  |- article_detail_page.dart
-|  |  |- webview_page.dart
-|  |- widgets/
-|  |  |- article_list.dart
-|  |- providers/
-|  |  |- article_provider.dart
-|- core/
-|  |- error/
-|  |  |- failure.dart
-|  |- network/
-|  |  |- network_info.dart
-|- locator.dart
-|- main.dart
+<img width="716" alt="Screenshot 2024-06-01 at 9 10 45 AM" src="https://github.com/Salahaddin-Mo7h/NY-Times-App/assets/103589726/6b493dc2-1b09-4ca7-81a0-431b04c3ca96">
 
 Detailed Descriptions
 
@@ -94,10 +64,6 @@ ViewModels: Manages state and logic for the UI, using Riverpod for state managem
 Use Cases
 
 FetchArticlesUseCase
-dart
-Copy code
-import '../entities/arts.dart';
-import '../repositories/article_repository.dart';
 
 class FetchArticlesUseCase {
   final ArticleRepository repository;
@@ -110,8 +76,7 @@ class FetchArticlesUseCase {
 }
 
 SearchArticlesUseCase
-dart
-Copy code
+
 import '../entities/arts.dart';
 import '../repositories/article_repository.dart';
 
@@ -126,10 +91,6 @@ class SearchArticlesUseCase {
 }
 
 FilterArticlesUseCase
-dart
-Copy code
-import '../entities/arts.dart';
-import '../repositories/article_repository.dart';
 
 class FilterArticlesUseCase {
   final ArticleRepository repository;
@@ -144,23 +105,6 @@ class FilterArticlesUseCase {
 # Unit Tests
 
 Unit Test for Use Cases
-usecase_tests.dart
-
-import 'package:flutter_test/flutter_test.dart';
-import 'package:mockito/mockito.dart';
-import 'package:your_project/domain/entities/arts.dart';
-import 'package:your_project/domain/repositories/article_repository.dart';
-import 'package:your_project/domain/usecases/fetch_articles_usecase.dart';
-import 'package:your_project/domain/usecases/search_articles_usecase.dart';
-import 'package:your_project/domain/usecases/filter_articles_usecase.dart';
-import 'mock_article_repository.mocks.dart';
-
-void main() {
-  late MockArticleRepository mockArticleRepository;
-
-  setUp(() {
-    mockArticleRepository = MockArticleRepository();
-  });
 
   group('FetchArticlesUseCase', () {
     test('should fetch articles from the repository', () async {
