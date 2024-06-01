@@ -20,7 +20,7 @@ A Flutter application that displays news articles using the clean architecture a
 lib/
 ├── data/
 │   ├── models/
-│   │   └── arts.dart
+│   │   └── top_stories.dart
 │   ├── repositories/
 │   │   └── article_repository_impl.dart
 │   ├── api/
@@ -32,9 +32,6 @@ lib/
 │   │   └── article_repository.dart
 │   ├── usecases/
 │   │   └── get_top_stories.dart
-│   │   └── fetch_articles_usecase.dart
-│   │   └── search_articles_usecase.dart
-│   │   └── filter_articles_usecase.dart
 ├── presentation/
 │   ├── pages/
 │   │   └── home_page.dart
